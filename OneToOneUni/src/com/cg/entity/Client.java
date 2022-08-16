@@ -9,6 +9,8 @@ public class Client {
 	EntityManagerFactory factory = Persistence.createEntityManagerFactory("JPA-PU");
 	EntityManager manager=factory.createEntityManager();
 	manager.getTransaction().begin();
+	
+	
 	Student student =new Student();
 	student.setName("Lekha");
 	Address address = new Address();
